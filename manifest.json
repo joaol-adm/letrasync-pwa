@@ -1,11 +1,10 @@
-
 {
   "name": "LetraSync",
   "short_name": "LetraSync",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#222",
+  "theme_color": "#222",
   "icons": [
     {
       "src": "icon-192.png",

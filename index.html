@@ -1,26 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="icon-192.png" />
-  <meta name="theme-color" content="#000000" />
   <title>LetraSync</title>
-  <style>
-    body { font-family: sans-serif; text-align: center; padding: 2em; background: #111; color: #fff; }
-    input { padding: 0.5em; margin: 0.5em; width: 80%; max-width: 400px; }
-    button { padding: 0.6em 1.2em; margin-top: 1em; }
-    .line { padding: 0.2em; border-bottom: 1px solid #333; }
-  </style>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
 </head>
 <body>
-  <h1>🎶 LetraSync</h1>
-  <input id="artist" placeholder="Nome do artista" autofocus /><br />
-  <input id="title" placeholder="Título da música" /><br />
+  <h1>LetraSync 🎵</h1>
+  <input type="text" id="artist" placeholder="Artista" />
+  <input type="text" id="title" placeholder="Música" />
   <button onclick="fetchLyrics()">Buscar Letra</button>
-  <div id="lyrics" style="margin-top: 2em;"></div>
+  <pre id="lyrics"></pre>
+
   <script src="app.js"></script>
 </body>
 </html>
