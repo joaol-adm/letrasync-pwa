@@ -6,8 +6,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    //const url = `https://lyrics.lewagon.ai/search?artist=${encodeURIComponent(artist)}&title=${encodeURIComponent(title)}`;
-    const url = 'https://letrasync-proxy.vercel.app/api?artist=${encodeURIComponent(artist)}&title=${encodeURIComponent(title)}`';
+       const url = 'https://letrasync-proxy.vercel.app/api?artist=${encodeURIComponent(artist)}&title=${encodeURIComponent(title)}`';
     const response = await fetch(url);
 
     if (!response.ok) {
